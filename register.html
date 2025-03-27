@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/register.css" />
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="header">
+                    <h1 class="logo">
+                        <img
+                            src="/img/logo.png"
+                            alt="logo"
+                            width="30"
+                            height="30"
+                        />
+                        CHILL
+                    </h1>
+
+                    <p>Daftar</p>
+                    <p>Selamat datang!</p>
+                </div>
+
+                <div class="input-form">
+                    <label for="username">
+                        Username
+                        <input
+                            type="text"
+                            placeholder="Masukkan username"
+                            id="username"
+                        />
+                    </label>
+                </div>
+
+                <div class="input-form">
+                    <label for="password">
+                        Kata Sandi
+                        <div class="input-box">
+                            <input
+                                type="password"
+                                placeholder="Masukkan kata sandi"
+                                id="password"
+                            />
+                            <img
+                                src="/img/eye-off.svg"
+                                alt="icon"
+                                class="eye-off"
+                            />
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-form">
+                    <label for="confirmPassword">
+                        Konfirmasi Kata Sandi
+                        <div class="input-box">
+                            <input
+                                type="password"
+                                placeholder="Masukkan kata sandi"
+                                id="confirmPassword"
+                            />
+                            <img
+                                src="/img/eye-off.svg"
+                                alt="icon"
+                                class="eye-off"
+                            />
+                        </div>
+                    </label>
+
+                    <div class="have-account">
+                        <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
+                    </div>
+                </div>
+
+                <div class="btn-login">
+                    <button type="submit">Daftar</button>
+                    <p>Atau</p>
+                    <button type="submit">
+                        <img src="/img/google.png" alt="logo" width="20px" />
+                        Daftar dengan Google
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/beranda.css" />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <title>Home</title>
+    </head>
+    <body>
+        <!-- Navbar Start -->
+        <header class="navbar">
+            <nav class="nav-list">
+                <ul>
+                    <li>
+                        <a href="beranda.html" class="logo">
+                            <img src="/img/logo.png" alt="logo" width="24" />
+                            <span>CHILL</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Series</a>
+                    </li>
+                    <li>
+                        <a href="#">Film</a>
+                    </li>
+                    <li>
+                        <a href="#">Daftar Saya</a>
+                    </li>
+                </ul>
+
+                <div class="profile" id="profile-btn">
+                    <img
+                        src="/img/bat-cat.jpg"
+                        alt="profile"
+                        width="32"
+                        height="32"
+                    />
+                    <span><i data-feather="chevron-down"></i></span>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <a href="#">👤 Profil Saya</a>
+                        <a href="#">⭐ Ubah Premium</a>
+                        <a href="#">↩️ Keluar</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Navbar End -->
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="content">
+                <div class="title-box">
+                    <h1>The Electric State</h1>
+                    <p>
+                        Based on the graphic novel of the same name by Simon
+                        Stålenhag, the story takes place in a reimagined version
+                        of 1997. With humans isolated in their VR helmets and a
+                        continuing battle against a strange breed of monstruous
+                        drones in the wake of a technological meltdown, a
+                        teenage girl named Michelle and a robot travel the West
+                        Coast of the U.S in search of the girl's missing
+                        brother.
+                    </p>
+                </div>
+                <div class="btn-box">
+                    <div class="btn-list">
+                        <button type="button" class="mulai">Mulai</button>
+                        <button type="button" class="info">
+                            <span><i data-feather="info"></i></span>
+                            Selengkapnya
+                        </button>
+                        <p>18+</p>
+                    </div>
+                    <button class="speaker">
+                        <span><i data-feather="volume-x"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Section Melanjutkan Tonton Film Start -->
+        <div class="film-section">
+            <h2>Melanjutkan Tonton Film</h2>
+            <div class="carousel">
+                <button
+                    class="prev"
+                    onclick="scrollLeftHandler('continue-watching')"
+                >
+                    ❮
+                </button>
+                <div class="film-container" id="continue-watching">
+                    <div class="card">
+                        <img src="/img/movies/6-2.jpg" alt="Don't Look Up" />
+                    </div>
+                    <div class="card">
+                        <img src="/img/movies/2-1.jpg" alt="The Boatman" />
+                    </div>
+                    <div class="card">
+                        <img src="/img/movies/7.jpg" alt="Jurrasic World" />
+                    </div>
+                    <div class="card">
+                        <img src="/img/movies/8-2.jpg" alt="Sonnic 3" />
+                    </div>
+                    <div class="card">
+                        <img
+                            src="/img/movies/12-3.jpg"
+                            alt="Duty After School"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            src="/img/movies/11.jpg"
+                            alt="Guardian Of The Galaxy"
+                        />
+                    </div>
+                </div>
+                <button
+                    class="next"
+                    onclick="scrollRightHandler('continue-watching')"
+                >
+                    ❯
+                </button>
+            </div>
+        </div>
+        <!-- Section Melanjutkan Tonton Film End -->
+
+        <!-- Section Top Rating Film dan Series Hari Ini Start -->
+        <section class="film-section">
+            <h2>Top Rating Film dan Series Hari Ini</h2>
+            <div class="carousel">
+                <button class="prev" onclick="scrollLeftHandler('top-rating')">
+                    ❮
+                </button>
+                <div class="film-container" id="top-rating">
+                    <div class="card2">
+                        <img src="/img/movies/5.jpg" alt="Anime" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/7-3.jpg" alt="Jurassic World" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/8.jpg" alt="Sonic" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/3-3.jpg" alt="Big Hero 6" />
+                    </div>
+                    <div class="card2">
+                        <img
+                            src="/img/movies/1-2.jpg"
+                            alt="A Man Called Otto"
+                        />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/10.jpg" alt="Missing" />
+                    </div>
+                </div>
+                <button class="next" onclick="scrollRightHandler('top-rating')">
+                    ❯
+                </button>
+            </div>
+        </section>
+        <!-- Section Top Rating Film dan Series Hari Ini End -->
+
+        <!-- Section Film Trending Start -->
+        <section class="film-section">
+            <h2>Film Trending</h2>
+            <div class="carousel">
+                <button class="prev" onclick="scrollLeftHandler('trending')">
+                    ❮
+                </button>
+                <div class="film-container" id="trending">
+                    <div class="card2">
+                        <img src="/img/movies/7-2.jpg" alt="The Tomorrow War" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/9-2.jpg" alt="Quantum" />
+                    </div>
+                    <div class="card2">
+                        <img
+                            src="/img/movies/11-2.jpg"
+                            alt="Guardians of the Galaxy"
+                        />
+                    </div>
+                    <div class="card2">
+                        <img
+                            src="/img/movies/1-2.jpg"
+                            alt="A Man Called Otto"
+                        />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/4.jpg" alt="Anime" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/2.jpg" alt="The Boatman" />
+                    </div>
+                </div>
+                <button class="next" onclick="scrollRightHandler('trending')">
+                    ❯
+                </button>
+            </div>
+        </section>
+        <!-- Section Film Trending End -->
+
+        <!-- Section Rilis Baru Start -->
+        <section class="film-section">
+            <h2>Rilis Baru</h2>
+            <div class="carousel">
+                <button class="prev" onclick="scrollLeftHandler('rilis')">
+                    ❮
+                </button>
+                <div class="film-container" id="rilis">
+                    <div class="card2">
+                        <img
+                            src="/img/movies/12-2.jpg"
+                            alt="The Tomorrow War"
+                        />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/3-2.jpg" alt="Quantum" />
+                    </div>
+                    <div class="card2">
+                        <img
+                            src="/img/movies/10-3.jpg"
+                            alt="Guardians of the Galaxy"
+                        />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/6.jpg" alt="A Man Called Otto" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/4-2.jpg" alt="Anime" />
+                    </div>
+                    <div class="card2">
+                        <img src="/img/movies/5-3.jpg" alt="The Boatman" />
+                    </div>
+                </div>
+                <button class="next" onclick="scrollRightHandler('rilis')">
+                    ❯
+                </button>
+            </div>
+        </section>
+        <!-- Section Rilis Baru End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <div class="container">
+                <div class="box1">
+                    <div class="logo">
+                        <img src="/img/logo.png" alt="logo" width="50" />
+                        <span>CHILL</span>
+                    </div>
+                    <p>@2025 Chill All Right Reserved.</p>
+                </div>
+                <div class="box2">
+                    <a href="#" class="title">Genre</a>
+                    <div class="genre-list">
+                        <div class="genre">
+                            <a href="#">Aksi</a>
+                            <a href="#">Anak-anak</a>
+                            <a href="#">Anime</a>
+                            <a href="#">Britania</a>
+                        </div>
+                        <div class="genre">
+                            <a href="#">Drama</a>
+                            <a href="#">Fantasi Ilmiah & Fantasi</a>
+                            <a href="#">Kejahatan</a>
+                            <a href="#">KDrama</a>
+                        </div>
+                        <div class="genre">
+                            <a href="#">Komedi</a>
+                            <a href="#">Petualangan</a>
+                            <a href="#">Perang</a>
+                            <a href="#">Romantis</a>
+                        </div>
+                        <div class="genre">
+                            <a href="#">Sains & Alam</a>
+                            <a href="#">Thriller</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <a href="#" class="title">Bantuan</a>
+                    <div class="list">
+                        <a href="#">FAQ</a>
+                        <a href="#">Kontak Kami</a>
+                        <a href="#">Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <script>
+            feather.replace()
+        </script>
+        <script src="/js/beranda.js"></script>
+    </body>
+</html>
