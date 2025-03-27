@@ -122,7 +122,7 @@ body {
             rgba(0, 0, 0, 0.2) 20%,
             rgba(0, 0, 0, 1) 100%
         ),
-        url("img/movies/hero.jpg");
+        url("../img/movies/hero.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

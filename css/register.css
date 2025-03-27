@@ -9,7 +9,7 @@
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
-    background-image: url("img/bg-register.jpg");
+    background-image: url("../img/bg-register.jpg");
     background-position: center;
     background-size: cover;
 }
